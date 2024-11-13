@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 3</title>
+</head>
+<body>
+    <h3>The Eval functions</h3>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <script>
+        var a = 30;
+        var b = 120;
+        var c = 15;
+        document.getElementById("p1").innerHTML="The sum of 30, 120 and 15 is " + eval("a+b+c");
+
+        document.getElementById("p2").innerHTML = "The product of 30, 120 and 15 is " + eval("a*b*c");
+
+        document.getElementById("p3").innerHTML = "The diiference of 120, 30 and 15 is " + eval("b-a-c");
+
+        document.getElementById("p4").innerHTML = "The value of the expression (((a+b)/c)-1)*20 is " + eval("(((a+b)/c)-1)*20");
+
+        document.getElementById("p5").innerHTML = "The quotient of 120 and 15 is " + eval("b/c");
+
+    </script>
+</body>
+</html>

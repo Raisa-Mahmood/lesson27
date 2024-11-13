@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+<body>
+    <h2>Array Mapping in Javascript</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        function product(a){
+            return a*15;
+        }
+        var numbers = [3,5,8,90,45,23];
+      document.getElementById("p1").innerHTML = "The Original Array is " + numbers;
+      var new_array = numbers.map(product);
+      document.getElementById("p2").innerHTML = "The Mapped Array is " + new_array;
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Array Sorting in Javascript</h4>
+    <button onclick="ascending()">Ascending Order</button>
+    <button onclick="descending()">Descending Order</button>
+    <button onclick="srtstring()">String sorting</button>
+    <button onclick="rvrs_srtstring()">Reverse-String sorting</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <script>
+        var number = [2,4,5,8,23,19,56,0,21]
+        document.getElementById("p1").innerHTML = "The original array is " + number;
+        function ascending(){
+        document.getElementById("p2").innerHTML ="The array in the ascending order is " + number.sort(function(a,b){return a-b});
+        }
+         function descending() {
+                document.getElementById("p3").innerHTML = "The array in the descending order is " + number.sort(function (a, b) { return b - a });
+            }
+        
+        var fruits = ["Mango", "Apple" , "Lichi", "and" , "cherry"]
+
+        function srtstring(){
+            document.getElementById("p4").innerHTML = "The string sorting is " + fruits.sort();
+        }
+        function rvrs_srtstring() {
+                document.getElementById("p5").innerHTML = "The reverse string sorting is " + fruits.reverse();
+            }
+    </script>
+</body>
+</html>
